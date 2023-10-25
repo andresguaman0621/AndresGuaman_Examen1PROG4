@@ -1,0 +1,48 @@
+﻿@model AndresGuaman_Examen1PROG.Models.AndresGuaman_tabla
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AndresGuaman_tabla</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.agSalario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.agSalario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.agNombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.agNombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.agConNombramiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.agConNombramiento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.agFecha)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.agFecha)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.agCedula)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.agCedula)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.agEmpleadoId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
